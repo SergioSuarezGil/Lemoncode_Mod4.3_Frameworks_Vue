@@ -140,11 +140,10 @@ const downloadExportText = () => {
       @download="downloadExportText"
     />
 
-    <div class="grid grid-cols-1 gap-3 lg:grid-cols-3">
+    <div class="flex flex-col gap-3">
       <DayCard
         v-for="day in visibleDays"
         :key="day"
-        :class="visibleDays.length === 1 ? 'lg:col-span-3' : ''"
         :days="mealPlannerStore.days"
         :day="day"
         :meals="filteredMealsByDay[day]"
