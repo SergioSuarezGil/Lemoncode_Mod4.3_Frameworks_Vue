@@ -1,0 +1,33 @@
+:root {
+  --color-bg: #eef2f8;
+  --color-text: #0f172a;
+  --color-muted-text: #52627a;
+  --color-border: #c4cedd;
+  --color-surface: #ffffff;
+  --color-surface-soft: #edf2f9;
+  --color-primary: #4f6d9a;
+  --color-primary-strong: #38537c;
+  --color-info-bg: #e6edf7;
+  --color-info-text: #3b5278;
+
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
